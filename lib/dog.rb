@@ -1,6 +1,11 @@
 # Add your code here
 class Dog
-  @@all = []
+
+require 'pry'
+
+@@all = []
+
+attr_accessor :name
 
 def initialize(name)
   @name = name
@@ -16,13 +21,7 @@ def self.clear_all
 end
 
 def self.print_all
-  @@all.each do |dog|
-    puts dog.name
-  end
-end
-
-def name
-  @name
+  @@all.each {|dog| puts dog.name}
 end
 
 def save

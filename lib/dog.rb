@@ -19,4 +19,7 @@ class Dog
   def self.print_all
     print @@all
   end
+
+  def save
+  end
 end
